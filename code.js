@@ -1,8 +1,8 @@
 var canvas, ctx;
 
-const backgroundColor = "#ffffff"; 
-const startColor = "#000000"; 
-const endColor = "#ff0000"; 
+const backgroundColor = "#eeee00"; 
+const startColor = "#bbbb00"; 
+const endColor = "#886633"; 
 
 var bgArray = color2Array(backgroundColor);
 var scArray = color2Array(startColor);
@@ -50,7 +50,7 @@ function drawTiles(){
 			}
 			//east path - random chance
 			if (x < meshWidth - 1) { // if not last column
-				if (randomInt(10) > 4) { openPaths += compass.e; }
+				if (randomInt(10) > 5) { openPaths += compass.e; }
 			}
 			//north path - check south
 			if (y > 0) { // if not first row
